@@ -59,6 +59,7 @@ The application includes 2 services:
     	`./start.sh`
     + Windows CMD: 
 		```
+		pipenv --python 3.7
 		pipenv shell
 		pipenv install -r dev-requirements.txt
 		pipenv install -r requirements.txt
