@@ -4,7 +4,7 @@
 
 
 ## Overview
-_This is a simple message board web application which is combination of Flask and Spyne. The application has two services: createMessage and listMessages._
+_This is a simple message board web application which supports 2 protocols: REST and SOAP. The application has two services: createMessage and listMessages. The application was implemented by using Python Flask and Spyne libraries._
 
 
 ## General
