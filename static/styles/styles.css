@@ -1,0 +1,59 @@
+/* Homepage CSS */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.message-box {
+    width: 90%;
+    height: 50%;
+    padding: 10px 10px;
+    border-style: round solid;
+    border-width: 1px;
+    margin: 20px 20px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    width: 5%;
+    background-color: lightgray;
+}
+
+
+/* Create Message Form CSS */
+.messages {
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+.messages-top {
+    border-color:black;
+}
+
+button.btn {
+display: block;
+padding: 11px 22px;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+margin: 10px 0px
+}
+
+.btn-blue {
+    background-color: #4285f4;
+    color: #fff;
+    border: 1px solid #4285f4
+}

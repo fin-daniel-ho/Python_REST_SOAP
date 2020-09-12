@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Block content to display the latest message. -->
+<div class="container-fluid mt-100">
+    <div class="row">
+        <div class="message-box">
+            {% if latest %}
+            <div><em>The latest message</em></div>
+            <div class="card mb-4">
+                <table style="width:100%" id="messages">
+                <tr>
+                    <th>Title</th>
+                    <td><div class="card-header"> {{ latest.title }} </div></td>
+                </tr>
+                <tr>
+                    <th>Content</th>
+                    <td class="content">
+                        <div class="card-body"><p><span>{{ latest.content }}</span></p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Sender</th>
+                    <td><div class="card-footer"> {{ latest.sender }} </div></td>
+                </tr>
+                <tr>
+                    <th>URL</th>
+                    <td><div class="card-footer"> {{ latest.url }} </div></td>
+                    </tr>
+                </table>
+            </div>
+            {% else %}
+            <div class="media flex-wrap w-100 align-items-center">
+                <div class="media-body ml-3">
+                    <div class="text-muted"><em>No New</div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
