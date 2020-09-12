@@ -57,7 +57,13 @@ The application includes 2 services:
 3. Run the application: 
     + Linux/MacOS terminal:
     	`./start.sh`
-    + Windows CMD: (simply run) pipenv run python main.py
+    + Windows CMD: 
+		```
+		pipenv shell
+		pipenv install -r dev-requirements.txt
+		pipenv install -r requirements.txt
+		pipenv run python main.py
+		```
 
 4. Test the API:
     You can test in the FrontEnd part, or test by using Postman or cURL.
